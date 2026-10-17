@@ -88,7 +88,7 @@ HAVING COUNT(*) > 50000;
 select t.title,avg(s.salary) as avg_salary
 from salaries s join titles t on s.emp_no=t.emp_no
 group by t.title;
-
+      
 --  8. Find the top 5 departments with the highest average salary.
 select d.dept_name,avg(s.salary) as avg_salary
 from dept_emp de join departments d on de.dept_no=d.dept_no
@@ -133,3 +133,5 @@ JOIN salaries s ON e.emp_no = s.emp_no
 WHERE de.to_date = '9999-01-01'
   AND s.to_date = '9999-01-01'
 ORDER BY e.emp_no;
+
+-- ready project
